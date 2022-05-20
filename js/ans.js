@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    alert("You can only select your answer once. so be careful when you are selecting")
     let a = 0;
     // The code for the wrong and right answer
     $(".q1").click(function(){
@@ -66,7 +67,7 @@ $(document).ready(function(){
 
 
 
-
+    var fN = prompt("Enter your First Name")
 
      $("#total").css("display" , "none");
     
@@ -74,7 +75,7 @@ $(document).ready(function(){
 
     $("#final").click(function(){
         $("p").css({"display": "block"})
-        $("#total").html("Total Scores: " + a + "/5" );
+        $("#total").html(fN + " your total Scores: " + a + "/5" );
         $("#total").css("display" , "block")
 
     })
